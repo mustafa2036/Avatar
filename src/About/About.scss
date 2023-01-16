@@ -1,0 +1,47 @@
+$main-danger:#1abc9c;
+$white-color:#fff;
+
+.about{
+    height: 100vh;
+    color: $white-color;
+    text-align: center;
+    background-color: $main-danger;
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        h1{
+            font-size: 5rem;
+        }
+        span{
+            position: relative;
+            font-size: 2rem;
+            &::before{
+                content: "";
+                background-color: $white-color;
+                width: 120px;
+                height: 4.5px;
+                position: absolute;
+                right: 50px;
+                bottom: 22px;
+                border-radius: 20px;
+            }
+            &::after{
+                content: "";
+                background-color: $white-color;
+                position: absolute;
+                border-radius: 20px;
+                height: 4.5px;
+                width: 120px;
+                bottom:22px;
+                left: 50px;
+            }
+        }
+        p{
+            font-size: 1.40rem;
+            text-align: left;
+        }
+    }
+}
